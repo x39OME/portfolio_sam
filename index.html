@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="icon" href="icon.PNG">
+  </head>
+  <body>
+    <section>
+      <header>
+        <a href="#" class="logo"><span>✧</span> x39OME.</a>
+        <div class="toggle" onclick="menuToggle();"></div>
+      </header>
+      <div class="glass"></div>
+      <div class="content">
+        <h2>Portfolio...<br><span>Welcome To my Website</h2>
+        <p>Be Nice Or Just leave</p>
+      </div>
+      <video src="images/video.mp4"autoplay muted loop></video>
+      <ul class="sci">
+        <li><a href="https://www.snapchat.com/add/x39OME" target="_blank"><i class="fa-brands fa-snapchat fa-2xl"></i></a></li>
+        <li><a href="https://twitter.com/x39OME" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
+        <li><a href="https://www.instagram.com/x39OME" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+        <li><a href="https://github.com/x39OME" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+        <li><a href="https://codepen.io/x39OME" target="_blank"><i class="fa-brands fa-codepen fa-2xl"></i></a></li>
+      </ul>
+      <div class="navigation">
+        <div style="--i:1">Hello every one my name is eassm i'm programmer, here you will find my works & some information about me
+      </div>
+      </div>
+    </section>
+
+
+
+    <script type="text/javascript">
+      function menuToggle(){
+        const toggleMenu = document.querySelector('.toggle');
+        const section = document.querySelector('section');
+        toggleMenu.classList.toggle('active')
+        section.classList.toggle('active')
+      }
+    </script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>
