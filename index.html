@@ -9,38 +9,154 @@
     <link rel="icon" href="icon.PNG">
   </head>
   <body>
-    <section>
-      <header>
-        <a href="#" class="logo"><span>✧</span> x39OME.</a>
+    <section id="home">
+      <div class="logo">
+        <a href="#" class="icon">
+          <span><i class="fa-solid fa-code"></i></span> x39OME.
+        </a>
         <div class="toggle" onclick="menuToggle();"></div>
-      </header>
-      <div class="glass"></div>
+      </div>
+      <div class="glass overlay"></div>
+      <div class="navbar">
+        <ul class="glass nav_menu">
+          <li><a href="#home"><i class="fa-solid fa-house"></i></a></li>
+          <li><a href="about"><i class="fa-solid fa-user"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-cloud"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-clipboard"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+      </div>
       <div class="content">
-        <h2>Portfolio...<br><span>Welcome To my Website</h2>
+        <h2>
+          Portfolio...<br><span>Welcome To my Website </span>
+        </h2>
         <p>Be Nice Or Just leave</p>
       </div>
-      <video src="images/video.mp4"autoplay muted loop></video>
+      <video src="images/video.mp4" autoplay muted loop></video>
       <ul class="sci">
-        <li><a href="https://www.tiktok.com/@x39ome?lang=en" target="_blank"><i class="fa-brands fa-tiktok fa-2xl"></i></a></li>
-        <li><a href="https://twitter.com/x39OME" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
-        <li><a href="https://www.instagram.com/x39OME" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
-        <li><a href="https://www.snapchat.com/add/x39OME" target="_blank"><i class="fa-brands fa-snapchat fa-2xl"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa-brands fa-tiktok fa-2xl"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
         <li><a href="https://github.com/x39OME" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li>
         <li><a href="https://codepen.io/x39OME" target="_blank"><i class="fa-brands fa-codepen fa-2xl"></i></a></li>
       </ul>
       <div class="navigation">
-        <div style="--i:1">Hello every one my name is eassm i'm programmer, here you will find my works & some information about me
-      </div>
+        <div style="--i:1">
+          Hello every one my name is eassm i'm programmer, 
+          here you will find my works & some information about me
+        </div>
       </div>
     </section>
-    <script type="text/javascript">
-      function menuToggle(){
-        const toggleMenu = document.querySelector('.toggle');
-        const section = document.querySelector('section');
-        toggleMenu.classList.toggle('active')
-        section.classList.toggle('active')
-      }
-    </script>
+    <div class="projects">
+      <div class="container">
+        <div class="title">
+          <p>Intro</p>
+          <h1 class="sp">My Projects</h1>
+        </div>
+        <div class="my-project">
+          <div class="box">
+            <img src="images/project.png" alt="" />
+            <div class="content">
+              <h3>Project name</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+            </div>
+            <div class="info">
+              <a href="">Live Demo</a>
+              <i class="fa-brands fa-square-github"></i>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/project.png" alt="" />
+            <div class="content">
+              <h3>Project name</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+            </div>
+            <div class="info">
+              <a href="">Live Demo</a>
+              <i class="fa-brands fa-square-github"></i>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/project.png" alt="" />
+            <div class="content">
+              <h3>Project name</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+            </div>
+            <div class="info">
+              <a href="">Live Demo</a>
+              <i class="fa-brands fa-square-github"></i>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/project.png" alt="" />
+            <div class="content">
+              <h3>Project name</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+            </div>
+            <div class="info">
+              <a href="">Live Demo</a>
+              <i class="fa-brands fa-square-github"></i>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/project.png" alt="" />
+            <div class="content">
+              <h3>Project name</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+            </div>
+            <div class="info">
+              <a href="">Live Demo</a>
+              <i class="fa-brands fa-square-github"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="contact-me">
+      <div class="container">
+        <div style="text-align:center">
+          <h2>Contact Us</h2>
+          <p>Swing by for a cup of coffee, or leave us a message:</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="images/map.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="usa">Saudi Arabia</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <div class="container">
+        <div class="copyright">Copyrights <i class="fa-regular fa-copyright"></i> 2022 All Rights Reserved by x39OME <i class="fa-solid fa-heart"></i></div>
+        <a href="mailto:x39ome@.com">x39OME@example.com</a></p>
+      </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
     <script src="js/all.min.js"></script>
   </body>
 </html>
