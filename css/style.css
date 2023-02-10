@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap');
 *{
   margin:0;
   padding:0;
@@ -12,7 +13,7 @@
   --mainPadding:80px;
   --fontTitle:'Dancing Script', cursive, sans-serif;
   --fontText:'Courier New', Courier, monospace, sans-serif;
-  --secFont:'Times New Roman', Times, serif;
+  --secFont:'Josefin Sans', sans-serif;
   --mainTransition: .3s;
 }
 ::selection{
@@ -23,7 +24,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  background-color: #fff;
+  background-color:#FAFCFF;
 }
 ul{
   list-style: none;
@@ -81,6 +82,21 @@ a{
   -moz-backdrop-filter: blur(15px);
   box-shadow: 10px 0 15px rgba(0, 0, 0, .5);
 }
+.btn{
+  color: var(--secColor);
+  background: var(--mainColor);
+  padding: 8px 20px;
+  width: 120px;
+  border-radius:5px;
+  text-align: center;
+  transition: .5s;
+  border: 2px solid #000;
+  margin: 0 auto;
+}
+.btn:hover{
+  color: var(--mainColor);
+  background: var(--secColor);
+}
 /* Start Section */
 section{
   position: relative;
@@ -117,11 +133,10 @@ section{
   transition: var(--mainTransition);
 }
 .logo .icon span{
-  margin-right: 10px;
-  font-size: 1.7em;
+  margin-right: 6px;
+  font-size: 1.2em;
 }
 .logo .icon:hover{
-  border-bottom: 1px solid #fff;
   color: var(--mainColor);
 }
 .logo .toggle{
@@ -347,7 +362,69 @@ section .navigation div:hover{
   }
 }
 /* End Section */
+/* Start About Me */
+.about{
+  padding-top: var(--mainPadding);
+  padding-bottom: var(--mainPadding);
+}
+.about .about-me{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 5rem;
+}
+.about .about-me .about_info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap:1.5rem;
+  margin-bottom: 2rem;
+}
+@media(max-width:993px){
+  .about .about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }  
+}
+.about .about-me .about_info .about_boxes{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.about .about-me .about_info .about_boxes .about_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px 10px;
+  width: 120px;
+  border: 5px double #e6e6e7;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(11, 17, 30, .1);
+}
+.about .about-me .about_info .about_boxes .about_box svg{
 
+}
+.about .about-me .about_info .about_boxes .about_box .text{
+  font-family: var(--secFont);
+  font-weight: 600;
+  font-size: 12px;
+}
+.about .about-me .about_info .about_boxes .about_box .subtitle{
+  font-size: 9px;
+  font-weight: 200;
+  font-family: var(--secFont);
+}
+.about .about-me img{
+  width: 350px;
+  height: auto;
+}
+/* End About Me */
+/* Start Projects */
 .projects{
   padding-top: var(--mainPadding);
   padding-bottom: var(--mainPadding);
@@ -363,23 +440,28 @@ section .navigation div:hover{
   border-radius: 6px;
   overflow: hidden;
   transition: transform var(--mainTransition), box-shadow var(--mainTransition);
+  padding: 5px;
+  border: 5px double #e6e6e7;
 }
 .projects .my-project .box:hover {
   transform: translateY(-10px);
   box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
 }
 .projects .my-project .box img {
-  width: 100%;
-  max-width: 100%;
+  width:100%;
+  max-width:100%;
+  height:250px;
 }
 .projects .my-project .box .content {
-  padding: 20px;
+  padding: 10px;
+  height: 100px;
 }
 .projects .my-project .box .content h3 {
+  font-family: var(--secFont);
   margin: 0;
 }
 .projects .my-project .box .content p {
-  margin: 10px 0 0;
+  margin: 5px 0 0;
   line-height: 1.5;
   color: var(--textColor);
 }
@@ -387,74 +469,105 @@ section .navigation div:hover{
   padding: 20px;
   border-top: 5px double #e6e6e7;
   display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.projects .my-project .box .info a:first-of-type{
+  color: var(--mainColor);
+  font-family:var(--secFont);
+  font-size: 14px;
+  font-weight:bold;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:5px;
+  transition:.3s;
+}
+.projects .my-project .box .info a:first-of-type svg{
+  animation: rotate 1.5s linear infinite;
+}
+.projects .my-project .box .info a:last-of-type svg {
+  font-size: 1.7em;
+  border-radius: 50%;
+}
+.projects .my-project .box .info a:hover:first-of-type{
+  color: var(--textColor);
+}
+.projects .my-project .box:hover .info a:first-of-type{
+  animation: moving-arrow 2s linear infinite;
+}
+
+/* Start Footer */
+footer{
+  padding-top: var(--mainPadding);
+  padding-bottom: var(--mainPadding);
+  background: rgba(0, 0, 0, .9);
+  padding: 20px;
+  text-align: center;
+}
+footer .container{
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.projects .my-project .box .info  {
-  color: var(--mainColor);
-  font-weight: bold;
+footer .copyright{
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-.projects .my-project .box .info svg {
-  color: var(--mainColor);
-}
-.projects .my-project .box:hover .info a {
-  animation: moving-arrow 0.6s linear infinite;
-}
-
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-.column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
-
-.footer .container{
+footer .container .links{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-
-
-
-
-
-
-
+footer .container .links a{
+  color: var(--secColor);
+}
+footer .date{
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* End Footer */
+/* Scroll to Top */
+.scrollTop{
+  position: fixed;
+  bottom: 70px;
+  right: -50px;
+  font-size: 20px;
+  padding: 3px 5px;
+  background: var(--mainColor);
+  color: var(--secColor);
+  border-radius: 5px;
+  transition: .3s;
+  cursor: pointer;
+  border: 2px solid #000;
+}
+.scrollTop.show{
+  right: 10px;
+}
+.scrollTop:hover{
+  background: var(--secColor);
+  color: var(--mainColor);
+}
 /* Animation */
 
 @keyframes moving-arrow {
-  100% {
+  50% {
     transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-360deg);
+}
+100% {
+    transform: rotate(0deg);
   }
 }
