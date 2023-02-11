@@ -69,7 +69,7 @@ a{
 .title p{
   color: var(--textColor);
 }
-.sp{
+.special{
   font-family: var(--fontText);
   font-size: 3rem;
   font-weight: 200;
@@ -211,22 +211,25 @@ section .navbar ul.nav_menu{
   padding: 20px 15px;
   position: fixed;
   left: 50%;
-  bottom:50px;
+  bottom:60px;
   transform: translateX(-50%);
   z-index: 999;
   border-radius: 10px;
 }
 section .navbar ul.nav_menu li svg{
-  transition: var(--mainTransition);
+  transition: .2s;
   font-size: 21px;
   color: var(--mainColor);
   cursor: pointer;
 }
 section .navbar ul.nav_menu li:hover svg{
-  color: var(--textColor);
-  background-color: var(--secColor);
-  border-radius: 50%;
+  transform: scale(1.2);
+  background: rgba(0, 0, 0, .1);
+  backdrop-filter: blur(15px);
+  filter: blur(1px);
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, .5);
 }
+
 /* End Navbar */
 section .content{
   position: relative;
@@ -391,6 +394,7 @@ section .navigation div:hover{
 }
 .about .about-me .about_info .about_boxes{
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 15px;
 }
@@ -407,6 +411,7 @@ section .navigation div:hover{
   box-shadow: 0 2px 8px rgba(11, 17, 30, .1);
 }
 .about .about-me .about_info .about_boxes .about_box svg{
+  color: var(--mainColor);
 }
 .about .about-me .about_info .about_boxes .about_box .text{
   font-family: var(--secFont);
@@ -423,6 +428,23 @@ section .navigation div:hover{
   height: auto;
 }
 /* End About Me */
+/* Start Skills */
+.skills{
+  padding-top: var(--mainPadding);
+  padding-bottom: var(--mainPadding);
+}
+.skills .my-skill{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+@media(max-width:767px){
+  .skills .my-skill{
+    flex-direction: column;
+  }
+}
+/* End Skills */
 /* Start Projects */
 .projects{
   padding-top: var(--mainPadding);
@@ -484,10 +506,18 @@ section .navigation div:hover{
 }
 .projects .my-project .box .info a:first-of-type svg{
   animation: rotate 1.5s linear infinite;
+  
 }
 .projects .my-project .box .info a:last-of-type svg {
   font-size: 1.7em;
   border-radius: 50%;
+  color: var(--mainColor);
+  transition: .3s;
+}
+.projects .my-project .box .info a:hover:last-of-type svg {
+  background: rgba(0, 0, 0, .1);
+  backdrop-filter: blur(15px);
+  filter: blur(1px);
 }
 .projects .my-project .box .info a:hover:first-of-type{
   color: var(--textColor);
@@ -495,6 +525,7 @@ section .navigation div:hover{
 .projects .my-project .box:hover .info a:first-of-type{
   animation: moving-arrow 2s linear infinite;
 }
+
 /* Start Footer */
 footer{
   padding-top: var(--mainPadding);
@@ -508,20 +539,19 @@ footer .container{
   justify-content: space-between;
   align-items: center;
 }
+@media(max-width:767px){
+  footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 footer .copyright{
   color: #fff;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
-}
-footer .container .links{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-footer .container .links a{
-  color: var(--secColor);
 }
 footer .date{
   color: #fff;
@@ -534,9 +564,10 @@ footer .date{
 .scrollTop{
   position: fixed;
   bottom: 70px;
-  right: -50px;
-  font-size: 20px;
-  padding: 3px 5px;
+  right: 10px;
+  opacity: 0;
+  font-size: 17px;
+  padding: 3px 6px;
   background: var(--mainColor);
   color: var(--secColor);
   border-radius: 5px;
@@ -545,7 +576,7 @@ footer .date{
   border: 2px solid #000;
 }
 .scrollTop.show{
-  right: 10px;
+  opacity:1;
 }
 .scrollTop:hover{
   background: var(--secColor);
