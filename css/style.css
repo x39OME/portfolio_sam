@@ -401,7 +401,7 @@ section .navigation div:hover{
   flex-direction: column;
   gap: 5px;
   padding: 15px 10px;
-  width: 120px;
+  width: 100px;
   border: 5px double #e6e6e7;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(11, 17, 30, .1);
