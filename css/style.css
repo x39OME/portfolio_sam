@@ -86,7 +86,7 @@ a{
   color: var(--secColor);
   background: var(--mainColor);
   padding: 8px 20px;
-  width: 100px;
+  width: 150px;
   border-radius:5px;
   text-align: center;
   transition: .5s;
