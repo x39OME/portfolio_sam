@@ -86,7 +86,6 @@ a{
   color: var(--secColor);
   background: var(--mainColor);
   padding: 8px 20px;
-  width: 150px;
   border-radius:5px;
   text-align: center;
   transition: .5s;
@@ -379,8 +378,9 @@ section .navigation div:hover{
 .about .about-me .about_info{
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  gap:1.5rem;
+  gap:2rem;
   margin-bottom: 2rem;
 }
 @media(max-width:993px){
