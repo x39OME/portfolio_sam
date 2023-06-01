@@ -9,8 +9,8 @@
 :root{
   --mainColor:#2F2F31;
   --secColor:#FAFCFF;
-  --glassColor:rgba(0, 0, 0, .4);
-  --glassDark:rgba(255, 255, 255, .4);
+  --glassColor: rgba(0, 0, 0, .3);
+  --glassDark: rgba(255, 255, 255, 0);
   --textColor:#777;
   --textDark:rgba(255, 255, 255, .7);
   --mainPadding:80px;
