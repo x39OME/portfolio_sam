@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.css">
@@ -9,12 +10,13 @@
     <link rel="icon" href="icon.png">
   </head>
   <body>
+    <!-- Start Header-->
     <section id="home">
       <div class="logo">
         <a href="#" class="icon">
-          <span><i class="fa-solid fa-code"></i></span> x39OME.
+          <span><i class="fa-brands fa-connectdevelop"></i></span> x39OME.
         </a>
-        <div class="toggle" onclick="menuToggle();"></div>
+        <div class="toggle-menu" onclick="menuToggle();"></div>
       </div>
       <div class="glass overlay"></div>
       <div class="navbar">
@@ -23,7 +25,7 @@
           <li><a href="#about"><i class="fa-solid fa-user"></i></a></li>
           <li><a href="#skills"><i class="fa-solid fa-wand-magic-sparkles"></i></a></li>
           <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i></a></li>
-          <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+          <li><a href="#contact"><i class="fa-solid fa-envelope"></i></a></li>
         </ul>
       </div>
       <div class="content">
@@ -48,6 +50,8 @@
         </div>
       </div>
     </section>
+    <!-- End Header-->
+    <!-- Start About Me-->
     <div class="about" id="about">
       <div class="container">
         <div class="title">
@@ -79,27 +83,129 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, assumenda <br>
             </div>
             <div class="button">
-              <a href="#contact" class="btn">Contact Me</a>
-              <a href="https://x39ome.github.io/my_resume/" target="_blank" class="btn">My Resume</a>
+              <a href="#contact" class="btn glass">Contact Me</a>
+              <a href="https://x39ome.github.io/my_resume/" target="_blank" class="btn glass">My Resume</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- End About Me-->
+    <!-- Start My Skills -->
     <div class="skills" id="skills">
       <div class="container">
         <div class="title">
           <p>My Abilities</p>
           <h1 class="special">My Skills</h1>
         </div>
-        <div class="my-skill">
-          <div class="frontend">
-            <h4 class="heading-4">Frontend Developre</h4>
-            my_skill
+        <div class="my-skills">
+          <div class="boxes frontend">
+            <h3 class="heading-3">Frontend Developer</h3>
+            <div class="skills-box">
+              <div class="group">
+                <div class="skill">
+                  <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <P>HTML</P>
+                  </div>
+                  <span><i class="fa-regular fa-circle"></i>Basic</span>
+                </div>
+                <div class="skill">
+                  <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <P>CSS</P>
+                  </div>
+                  <span><i class="fa-regular fa-circle"></i>Basic</span>
+                </div>
+                <div class="skill">
+                  <div>
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <P>Bootstrap</P>
+                  </div>
+                  <span><i class="fa-regular fa-circle"></i>Basic</span>
+                </div>
+              </div>
+              <div class="group">
+                <div class="skill">
+                  <div>
+                    <i class="fa-brands fa-js"></i>
+                    <P>Javascript</P>
+                  </div>
+                  <span><i class="fa-regular fa-circle"></i>Basic</span>
+                </div>
+                <div class="skill">
+                  <div>
+                    <i class="fa-brands fa-react"></i>
+                    <P>ReactJs</P>
+                  </div>
+                  <span><i class="fa-regular fa-circle"></i>Basic</span>
+                </div>
+                <div class="skill">
+                  <div>
+                    <i class="fa-brands fa-sass"></i>
+                    <P>Sass</P>
+                  </div>
+                  <span><i class="fa-regular fa-circle"></i>Basic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="boxes backend">
+            <h3 class="heading-3">backend Developer</h3>
+            <div class="skills-box">
+              <div class="group">
+                <div class="skill">
+                  <div>
+                    <i class="fa-brands fa-connectdevelop"></i>
+                    <P>HTML</P>
+                  </div>
+                  <span><i class="fa-regular fa-circle"></i>Basic</span>
+                </div>
+                <div class="skill">
+                  <div>
+                    <i class="fa-brands fa-connectdevelop"></i>
+                    <P>HTML</P>
+                  </div>
+                  <span><i class="fa-regular fa-circle"></i>Basic</span>
+                </div>
+                <div class="skill">
+                  <div>
+                    <i class="fa-brands fa-connectdevelop"></i>
+                    <P>HTML</P>
+                  </div>
+                  <span><i class="fa-regular fa-circle"></i>Basic</span>
+                </div>
+              </div>
+              <div class="group">
+                <div class="skill">
+                  <div>
+                    <i class="fa-brands fa-connectdevelop"></i>
+                    <P>HTML</P>
+                  </div>
+                  <span><i class="fa-regular fa-circle"></i>Basic</span>
+                </div>
+                <div class="skill">
+                  <div>
+                    <i class="fa-brands fa-connectdevelop"></i>
+                    <P>HTML</P>
+                  </div>
+                  <span><i class="fa-regular fa-circle"></i>Basic</span>
+                </div>
+                <div class="skill">
+                  <div>
+                    <i class="fa-brands fa-connectdevelop"></i>
+                    <P>HTML</P>
+                  </div>
+                  <span><i class="fa-regular fa-circle"></i>Basic</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- End My Skills -->
+    <!-- Start My Projects -->
     <div id="projects" class="projects">
       <div class="container">
         <div class="title">
@@ -109,10 +215,16 @@
         <div class="my-project">
           <!-- Project -->
           <div class="box">
-            <img src="images/projects/oasis_desert.png" alt="project">
+            <img src="images/projects/oasis_desert.png" alt="oasis_desert">
             <div class="content">
               <h3>Oasis Desert</h3>
-              <p>Oasis Desert Project Using HTML\CSS & Vanilla Javascript With Dark Mode</p>
+              <ul>
+                <li>Responsive</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Vanilla Javascript</li>
+                <li>Dark Mode</li>
+              </ul>
             </div>
             <div class="info">
               <a href="https://x39ome.github.io/template_oasis_desert/" target="_blank"><i class="fa-solid fa-spinner"></i> Live Demo</a>
@@ -122,10 +234,16 @@
           <!-- Project -->
           <!-- Project -->
           <div class="box">
-            <img src="images/projects/chocolatier.png" alt="project">
+            <img src="images/projects/chocolatier.png" alt="chocolatier">
             <div class="content">
               <h3>Chocolatier Template</h3>
-              <p>Responsive Website Using HTML\CSS Bootstrap & Javascript </p>
+              <ul>
+                <li>Responsive</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Bootstrap</li>
+              </ul>
             </div>
             <div class="info">
               <a href="https://x39ome.github.io/chocolatier_template/" target="_blank"><i class="fa-solid fa-spinner"></i> Live Demo</a>
@@ -135,10 +253,15 @@
           <!-- Project -->
           <!-- Project -->
           <div class="box">
-            <img src="images/projects/fior_kava.png" alt="project">
+            <img src="images/projects/fior_kava.png" alt="fior_kava">
             <div class="content">
               <h3>Fior Kava</h3>
-              <p>Responsive Website Using HTML\CSS & Javascript</p>
+              <ul>
+                <li>Responsive</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
             </div>
             <div class="info">
               <a href="https://x39ome.github.io/fior_kava_responsive_website/" target="_blank"><i class="fa-solid fa-spinner"></i> Live Demo</a>
@@ -148,10 +271,15 @@
           <!-- Project -->
           <!-- Project -->
           <div class="box">
-            <img src="images/projects/hot_burger.png" alt="project">
+            <img src="images/projects/hot_burger.png" alt="hot_burger">
             <div class="content">
               <h3>Resturant Burger Template</h3>
-              <p>Responsive Website Using HTML\CSS & Javascript</p>
+              <ul>
+                <li>Responsive</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
             </div>
             <div class="info">
               <a href="https://x39ome.github.io/resturant_burger_template/" target="_blank"><i class="fa-solid fa-spinner"></i> Live Demo</a>
@@ -161,10 +289,15 @@
           <!-- Project -->
           <!-- Project -->
           <div class="box">
-            <img src="images/projects/wood.png" alt="project">
+            <img src="images/projects/wood.png" alt="wood">
             <div class="content">
               <h3>Wood Template</h3>
-              <p>Using Html\Css & Javascript</p>
+              <ul>
+                <li>Responsive</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
             </div>
             <div class="info">
               <a href="https://x39ome.github.io/wood_template_website/" target="_blank"><i class="fa-solid fa-spinner"></i> Live Demo</a>
@@ -173,10 +306,15 @@
           </div>
           <!-- Project -->
           <div class="box">
-            <img src="images/projects/squad_game.png" alt="project">
+            <img src="images/projects/squad_game.png" alt="squad_game">
             <div class="content">
               <h3>Squad Gaming</h3>
-              <p>Squad Gaming Responsive Website Using Bootstrap 5 & Html\Css</p>
+              <ul>
+                <li>Responsive</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
             </div>
             <div class="info">
               <a href="https://x39ome.github.io/squad_gaming_bootstrap/" target="_blank"><i class="fa-solid fa-spinner"></i> Live Demo</a>
@@ -186,10 +324,15 @@
           <!-- Project -->
           <!-- Project -->
           <div class="box">
-            <img src="images/projects/house.png" alt="project">
+            <img src="images/projects/house.png" alt="house">
             <div class="content">
               <h3>House Template</h3>
-              <p>Html & Css Responsive</p>
+              <ul>
+                <li>Responsive</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
             </div>
             <div class="info">
               <a href="https://x39ome.github.io/house_template/" target="_blank"><i class="fa-solid fa-spinner"></i> Live Demo</a>
@@ -199,10 +342,15 @@
           <!-- Project -->
           <!-- Project -->
           <div class="box">
-            <img src="images/projects/100_projects_100_days.png" alt="project">
+            <img src="images/projects/100_projects_100_days.png" alt="100 projects">
             <div class="content">
               <h3>100 projects</h3>
-              <p>100 Small Projects In 100 Days Usin Javascript & Html\Css</p>
+              <ul>
+                <li>Responsive</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
             </div>
             <div class="info">
               <a href="https://x39ome.github.io/100_project_100_days/" target="_blank"><i class="fa-solid fa-spinner"></i> Live Demo</a>
@@ -212,10 +360,15 @@
           <!-- Project -->
           <!-- Project -->
           <div class="box">
-            <img src="images/projects/world-blog.png" alt="project">
+            <img src="images/projects/world-blog.png" alt="world-blog">
             <div class="content">
               <h3>World Blog</h3>
-              <p>Responsive Blog Using Bootstrap 5</p>
+              <ul>
+                <li>Responsive</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
             </div>
             <div class="info">
               <a href="https://x39ome.github.io/world_blog_rtl/" target="_blank"><i class="fa-solid fa-spinner"></i> Live Demo</a>
@@ -225,10 +378,34 @@
           <!-- Project -->
           <!-- Project -->
           <div class="box">
+            <img src="images/projects/dashboread.jpg" alt="dashboread">
+            <div class="content">
+              <h3>Dashboread</h3>
+              <ul>
+                <li>Responsive</li>
+                <li>Framework</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>8 Pages</li>
+              </ul>
+            </div>
+            <div class="info">
+              <a href="https://x39ome.github.io/Dashboread/" target="_blank"><i class="fa-solid fa-spinner"></i> Live Demo</a>
+              <a href="https://github.com/x39OME/Dashboread" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+          </div>
+          <!-- Project -->
+          <!-- Project -->
+          <div class="box">
             <img src="images/project.png" alt="project">
             <div class="content">
               <h3>Project Name</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <ul>
+                <li>Responsive</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
             </div>
             <div class="info">
               <a href="https://github.com/x39OME/" target="_blank"><i class="fa-solid fa-spinner"></i> Live Demo</a>
@@ -241,7 +418,12 @@
             <img src="images/project.png" alt="project">
             <div class="content">
               <h3>Project Name</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <ul>
+                <li>Responsive</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
             </div>
             <div class="info">
               <a href="https://github.com/x39OME/" target="_blank"><i class="fa-solid fa-spinner"></i> Live Demo</a>
@@ -254,7 +436,48 @@
             <img src="images/project.png" alt="project">
             <div class="content">
               <h3>Project Name</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <ul>
+                <li>Responsive</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+            </div>
+            <div class="info">
+              <a href="https://github.com/x39OME/" target="_blank"><i class="fa-solid fa-spinner"></i> Live Demo</a>
+              <a href="https://github.com/x39OME/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+          </div>
+          <!-- Project -->
+          <!-- Project -->
+          <div class="box">
+            <img src="images/project.png" alt="project">
+            <div class="content">
+              <h3>Project Name</h3>
+              <ul>
+                <li>Responsive</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+            </div>
+            <div class="info">
+              <a href="https://github.com/x39OME/" target="_blank"><i class="fa-solid fa-spinner"></i> Live Demo</a>
+              <a href="https://github.com/x39OME/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+          </div>
+          <!-- Project -->
+          <!-- Project -->
+          <div class="box">
+            <img src="images/project.png" alt="project">
+            <div class="content">
+              <h3>Project Name</h3>
+              <ul>
+                <li>Responsive</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
             </div>
             <div class="info">
               <a href="https://github.com/x39OME/" target="_blank"><i class="fa-solid fa-spinner"></i> Live Demo</a>
@@ -265,10 +488,70 @@
         </div>
       </div>
     </div>
+        <!-- End My Projects -->
 
+    <!-- Start Contact Me-->
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="title">
+          <p>Intro</p>
+          <h1 class="special">Contact Me</h1>
+        </div>
+        <div class="contact-me">
+          <div class="talk-me">
+            <h3>Talk To Me</h3>
+            <div class="contact-info">
+              <div class="email">
+                <i class="fa-regular fa-envelope"></i>
+                <p>Email</p>
+                <span>Essamabdullah@outlook.sa</span>
+                <a href="mailto:essamabdullah@outlook.sa">Send Me <i class="fa-solid fa-chevron-right"></i></a>
+              </div>
+              <div class="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>Whatsapp</p>
+                <span>+966 56-000-0000</span>
+                <a href="http://wa.me/+966565270000">Send Me <i class="fa-solid fa-chevron-right"></i></a>
+              </div>
+              <div class="linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+                <p>Linkedin</p>
+                <span>@x39OME</span>
+                <a href="#">Send Me <i class="fa-solid fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="text-me">
+            <h3>Write me anything you need </h3>
+            <form action="">
+              <div class="contact-form">
+                <label for="">Name</label>
+                <input type="text" placeholder="Type You Name">
+              </div>
+              <div class="contact-form">
+                <label for="">Mail</label>
+                <input type="email" placeholder="Type You Email">
+              </div>
+              <div class="contact-form">
+                <label for="">Anything</label>
+                <textarea placeholder="Write Anything You Want" name="" id="" cols="30" rows="10"></textarea>
+              </div>
+              <button class="btn">Send Message <i class="fa-solid fa-chevron-right"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact Me-->
   <!-- Start Footer -->
   <footer>
     <div class="container">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
       <div class="copyright">
         Copyrights
         <i class="fa-regular fa-copyright"></i>
@@ -281,9 +564,26 @@
     </div>
   </footer>
   <!-- End Footer -->
-
-  <div class="scrollTop"><i class="fa-solid fa-angle-up"></i></div>
-
+  <!-- Start Popup-->
+  <div class="popup">
+    <div class="container">
+      <button id="open" class="glass"><i class="fa-solid fa-question"></i></button>
+      <div class="question" id="question">
+        <div class="modal">
+          <h1>Try Again</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nam doloremque accusamus vel. Ea similique aliquid pariatur. Sint assumenda odit possimus voluptas odio</p>
+          <button id="close">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Popup-->
+  <!-- Dark Mode -->
+  <div class="toggle glass"></div>
+  <!-- Dark Mode -->
+  <!-- Scroll To Top-->
+  <div class="scrollTop glass"><i class="fa-solid fa-angle-up"></i></div>
+  <!-- Scroll To Top-->
     <script src="js/main.js"></script>
     <script src="js/all.min.js"></script>
   </body>
