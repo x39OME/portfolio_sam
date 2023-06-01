@@ -598,7 +598,7 @@ section .navigation div:hover{
 .dark .projects .my-project .box{
   background-color: var(--mainColor);
   color: var(--secColor);
-  border-color: rgba(255,255,255, .1);
+  border-color: rgba(255, 255, 255, .1);
 }
 .projects .my-project .box:hover {
   transform: translateY(-10px);
@@ -648,7 +648,7 @@ section .navigation div:hover{
   align-items: center;
 }
 .dark .projects .my-project .box .info{
-  border-color: rgba(255,255,255, .1);
+  border-color: rgba(255, 255, 255, .1);
 }
 .projects .my-project .box .info a:first-of-type{
   color: var(--mainColor);
@@ -663,11 +663,9 @@ section .navigation div:hover{
 }
 .dark .projects .my-project .box .info a:first-of-type{
   color: var(--secColor);
-
 }
 .projects .my-project .box .info a:first-of-type svg{
   animation: rotate 1.5s linear infinite;
-  
 }
 .projects .my-project .box .info a:last-of-type svg {
   font-size: 1.7em;
@@ -689,9 +687,6 @@ section .navigation div:hover{
 .projects .my-project .box:hover .info a:first-of-type{
   animation: moving-arrow 2s linear infinite;
 }
-
-
-
 /* Start Contact Me */
 .contact{
   padding-top: var(--mainPadding);
@@ -815,7 +810,6 @@ footer ul{
   display: flex;
   justify-content: center;
   gap: 20px;
-
 }
 footer ul li a{
   color: var(--secColor);
