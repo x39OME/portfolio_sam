@@ -629,7 +629,7 @@ section .navigation div:hover{
   background-color: rgba(255, 255, 255, .2);
 }
 .projects .my-project .box .info {
-  padding: 20px;
+  padding: 10px;
   border-top: 5px double #e6e6e7;
   display: flex;
   justify-content:space-between;
