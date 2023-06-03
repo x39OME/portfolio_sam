@@ -595,7 +595,7 @@ section .navigation div:hover{
 .projects .my-project .box img {
   width:100%;
   max-width:100%;
-  height:250px;
+  height:200px;
 }
 .projects .my-project .box .content {
   padding: 10px;
