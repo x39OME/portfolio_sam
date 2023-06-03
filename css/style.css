@@ -599,7 +599,7 @@ section .navigation div:hover{
 }
 .projects .my-project .box .content {
   padding: 10px;
-  height: 150px;
+  height: 175px;
 }
 .projects .my-project .box .content h3 {
   font-family: var(--secFont);
