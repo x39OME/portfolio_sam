@@ -10,7 +10,7 @@
   --mainColor:#2F2F31;
   --secColor:#FAFCFF;
   --glassColor: rgba(0, 0, 0, .3);
-  --glassDark: rgba(255, 255, 255, 0);
+  --glassDark: rgba(255, 255, 255, .1);
   --textColor:#777;
   --textDark:rgba(255, 255, 255, .7);
   --mainPadding:80px;
@@ -25,8 +25,8 @@
   color: var(--secColor);
 }
 .dark::selection{
-  background-color: var(--secColor);
-  color: var(--mainColor);
+  background-color: var(--secColor) !important;
+  color: var(--mainColor) !important;
 }
 html{
   scroll-behavior: smooth;
@@ -73,6 +73,7 @@ a{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 .title p{
   color: var(--textColor);
@@ -112,10 +113,15 @@ a{
 .dark .btn{
   color: var(--mainColor);
   background: var(--secColor);
+  border: 1px solid var(--secColor);
 }
 .btn:hover{
   color: var(--mainColor);
   background: var(--secColor);
+}
+.dark .btn:hover{
+  color: var(--secColor);
+  background: var(--mainColor);
 }
 /* Start Section */
 section{
@@ -249,7 +255,6 @@ section .navbar ul.nav_menu li:hover svg{
   filter: blur(1px);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, .5);
 }
-
 /* End Navbar */
 section .content{
   position: relative;
@@ -257,7 +262,7 @@ section .content{
   text-align: center;
   transition: var(--mainTransition);
   transition-delay: 1s;
-  z-index: 9;
+  z-index: 999;
 }
 section.active .content{
   opacity: 0;
@@ -435,9 +440,13 @@ section .navigation div:hover{
   gap: 5px;
   padding: 15px 10px;
   width: 100px;
-  border: 5px double rgba(255, 255, 255, .1);
+  border: 5px double rgba(0, 0, 0, .1);
   border-radius: var(--roundShape);
   box-shadow: 0px 0px 5px rgba(11, 17, 30, .1);
+}
+.dark .about .about-me .about_info .about_boxes .about_box{
+  border: 5px double rgba(255, 255, 255, .1);
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, .2);
 }
 .about .about-me .about_info .about_boxes .about_box svg{
   color: var(--mainColor);
@@ -485,34 +494,16 @@ section .navigation div:hover{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 40px;
+  padding: 30px;
   background-color: var(--secColor);
   box-shadow: 0px 0px 5px rgb(0 0 0 / 20%);
   border-radius: var(--roundShape);
-  position: relative;
-
-}
-.skills .my-skills .boxes::before{
-  content: '';
-  width: 1%;
-  height: 3px;
-  background-color: var(--mainColor);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: .5s;
-}
-.dark .skills .my-skills .boxes::before{
-  background-color: var(--secColor);
-}
-.skills .my-skills .boxes:hover::before{
-  width: 100%;
+  width: 360px;
 }
 .dark .skills .my-skills .boxes{
   color: var(--secColor);
   background-color: var(--mainColor);
   box-shadow: 0px 0px 5px rgb(255 255 255 / 20%);
-
 }
 .heading-3{
   font-family: var(--secFont);
@@ -541,9 +532,6 @@ section .navigation div:hover{
   display: flex;
   align-items: center;
   gap: 10px;
-}
-.skills .my-skills .boxes .skills-box .skill:hover svg{
-  
 }
 .skills .my-skills .boxes .skills-box .skill div svg{
   font-size: 17px;
@@ -638,7 +626,7 @@ section .navigation div:hover{
   border-radius: var(--roundShape);
 }
 .dark .projects .my-project .box .content ul li{
-  background-color: var(--glassDark);
+  background-color: rgba(255, 255, 255, .2);
 }
 .projects .my-project .box .info {
   padding: 20px;
@@ -717,12 +705,10 @@ section .navigation div:hover{
   flex-direction: column;
   gap: 30px;
 }
-.dark .contact .contact-me .contact-info{
-  color: var(--mainColor);
-}
+
 .contact .contact-me .contact-info div{
   background-color: var(--secColor);
-  box-shadow: 0px 0px 5px rgb(0 0 0 / 20%);
+  border:2px solid var(--textColor);
   border-radius: var(--roundShape);
   padding: 10px 60px;
   display: flex;
@@ -730,26 +716,58 @@ section .navigation div:hover{
   align-items: center;
   flex-direction: column;
 }
+.dark .contact .contact-me .contact-info div{
+  background-color: var(--mainColor);
+  color: var(--secColor);
+}
 .contact .contact-me .contact-info svg{
   font-size: 30px;
   margin-bottom: 10px;
 }
 .contact .contact-me .contact-info p{
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-weight: 600;
 }
 .contact .contact-me .contact-info span{
   font-size: 14px;
 }
 .contact .contact-me .contact-info a{
-  margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 15px;
+  background-color: var(--glassColor);
+  color: var(--secColor);
+  padding: 3px;
+  border-radius: var(--roundShape);
+  position: relative;
 }
-.contact .contact-me .contact-info a svg{
-  font-size: 11px;
+.dark .contact .contact-me .contact-info a{
+  color: var(--secColor);
+  background-color:rgba(255, 255, 255, .2);;
+}
+.contact .contact-me .contact-info a::before{
+  content: '';
+  width: 5px;
+  height: 5px;
+  border: 1px solid var(--glassColor);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--mainColor);
+  position: absolute;
+  left: -10px;
+  transition: var(--mainTransition);
+}
+.contact .contact-me .contact-info a:hover::before{
+  background-color: var(--glassColor);
+}
+.dark .contact .contact-me .contact-info a::before{
+  border: 1px solid var(--secColor);
+  border: 1px solid var(--secColor);
+}
+.dark .contact .contact-me .contact-info a:hover::before{
+  background-color: var(--secColor);
 }
 .contact .contact-me .text-me form {
   display: flex;
@@ -790,6 +808,15 @@ section .navigation div:hover{
 }
 .contact .contact-me .text-me form .contact-form textarea{
   resize: none;
+}
+.contact .contact-me .text-me button {
+  position: relative;
+}
+.contact .contact-me .text-me button svg {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 /* End Contact Me */
 /* Start Footer */
@@ -910,7 +937,7 @@ button#open:hover, button#close:hover{
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 20px;
+  top: 100px;
   right: 20px;
   transition: var(--mainTransition);
   border: 1px solid var(--mainColor);
