@@ -624,13 +624,15 @@ section .navigation div:hover{
   margin: 0;
   padding: 5px;
 }
-
 .projects .my-project .box .content p {
   margin-top: 8px;
   line-height: 1.5;
   color: var(--textColor);
   border-top: 5px double #e6e6e7;
   padding: 5px;
+}
+.dark .projects .my-project .box .content p{
+  border-top-color:5px double var(--glassDark)
 }
 .projects .my-project .box .content ul {
   display: flex;
