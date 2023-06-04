@@ -242,6 +242,11 @@ section .navbar ul.nav_menu{
   z-index: 999;
   border-radius: var(--roundShape);
 }
+@media(max-width: 776px) {
+  section .navbar ul.nav_menu {
+    bottom:110px;
+  }
+}
 section .navbar ul.nav_menu li svg{
   transition: .2s;
   font-size: 21px;
