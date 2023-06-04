@@ -244,7 +244,7 @@ section .navbar ul.nav_menu{
 }
 @media(max-width: 776px) {
   section .navbar ul.nav_menu {
-    bottom:110px;
+    bottom:70px;
   }
 }
 section .navbar ul.nav_menu li svg{
