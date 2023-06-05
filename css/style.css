@@ -644,7 +644,7 @@ section .navigation div:hover{
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 5px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .projects .my-project .box .content ul li{
   background-color: var(--glassColor);
