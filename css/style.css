@@ -24,9 +24,9 @@
   background-color: var(--mainColor);
   color: var(--secColor);
 }
-.dark::selection{
-  background-color: var(--secColor) !important;
-  color: var(--mainColor) !important;
+.dark ::selection{
+  background-color: var(--secColor);
+  color: var(--mainColor);
 }
 html{
   scroll-behavior: smooth;
