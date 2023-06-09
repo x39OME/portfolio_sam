@@ -637,7 +637,7 @@ section .navigation div:hover{
   padding: 5px;
 }
 .dark .projects .my-project .box .content p{
-  border-top-color:5px double rgba(255, 255, 255, .1)
+  border-top-color:rgba(255, 255, 255, .1)
 }
 .projects .my-project .box .content ul {
   display: flex;
