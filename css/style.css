@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:wght@400;500;700&display=swap');
 *{
   margin:0;
   padding:0;
@@ -511,11 +510,11 @@ section .navigation div:hover{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 30px;
+  padding: 25px;
   background-color: var(--secColor);
   box-shadow: 0px 0px 5px rgb(0 0 0 / 20%);
   border-radius: var(--roundShape);
-  width: 350px;
+  width: 340px;
 }
 .dark .skills .my-skills .boxes{
   color: var(--secColor);
@@ -550,8 +549,9 @@ section .navigation div:hover{
   align-items: center;
   gap: 10px;
 }
-.skills .my-skills .boxes .skills-box .skill div svg{
-  font-size: 17px;
+.skills .my-skills .boxes .skills-box .skill div img{
+  width: 25px;
+  height: 25px;
 }
 .skills .my-skills .boxes .skills-box .skill span{
   font-size: 11px;
