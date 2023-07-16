@@ -95,7 +95,7 @@ a{
     -o-backdrop-filter: blur(15px);
     -moz-backdrop-filter: blur(15px);
 }
-.down{
+.down a{
   position: absolute;
   left: 50%;
   bottom: -55px;
@@ -103,7 +103,7 @@ a{
   color: var(--mainColor);
   cursor: pointer;
 }
-.down svg{
+.down a svg{
   animation: down .5s alternate infinite;
 }
 .dark .glass{
