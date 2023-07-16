@@ -76,6 +76,7 @@ a{
 }
 .title p{
   color: var(--textColor);
+  font-family: var(--secFont);
 }
 .dark .title p{
   color: var(--textDark);
@@ -93,6 +94,17 @@ a{
     -webkit-backdrop-filter: blur(15px);
     -o-backdrop-filter: blur(15px);
     -moz-backdrop-filter: blur(15px);
+}
+.down{
+  position: absolute;
+  left: 50%;
+  bottom: -55px;
+  transform: translateX(-50%);
+  color: var(--mainColor);
+  cursor: pointer;
+}
+.down svg{
+  animation: down .5s alternate infinite;
 }
 .dark .glass{
   background-color: var(--glassDark);
@@ -236,15 +248,10 @@ section .navbar ul.nav_menu{
   padding: 20px 15px;
   position: fixed;
   left: 50%;
-  bottom:10px;
+  bottom:100px;
   transform: translateX(-50%);
   z-index: 999;
   border-radius: var(--roundShape);
-}
-@media(max-width: 776px) {
-  section .navbar ul.nav_menu {
-    bottom:70px;
-  }
 }
 section .navbar ul.nav_menu li svg{
   transition: .2s;
@@ -409,6 +416,7 @@ section .navigation div:hover{
 .about .container{
   transform: translateY(1000px);
   transition: 3s;
+  position: relative;
 }
 .dark .about{
   background-color: var(--mainColor);
@@ -426,7 +434,11 @@ section .navigation div:hover{
   align-items: center;
   flex-direction: column;
   gap:2rem;
-  margin-bottom: 2rem;
+  width: 50%;
+}
+.about .about-me .about_info .about-des{
+  text-align: center;
+  font-size: 14px;
 }
 @media(max-width:993px){
   .about .about-me{
@@ -435,7 +447,10 @@ section .navigation div:hover{
     align-items: center;
     flex-direction: column;
     text-align: center;
-  }  
+  }
+  .about .about-me .about_info{
+    width: 100%;
+  }
 }
 .about .about-me .about_info .about_boxes{
   display: flex;
@@ -745,12 +760,13 @@ section .navigation div:hover{
   background-color: var(--mainColor);
   color: var(--secColor);
 }
-.contact .contact-me .contact-info svg{
-  font-size: 30px;
+.contact .contact-me .contact-info div img{
+  width: 30px;
+  height: 30px;
   margin-bottom: 10px;
 }
 .contact .contact-me .contact-info p{
-  font-size: 18px;
+  font-family: var(--secFont);
   margin-bottom: 5px;
   font-weight: 600;
 }
@@ -837,15 +853,14 @@ section .navigation div:hover{
 /* End Contact Me */
 /* Start Footer */
 footer{
-  padding-top: var(--mainPadding);
-  padding-bottom: 100px;
-  background: rgba(0, 0, 0, .9);
+  color: var(--secColor);
+  padding: 20px 0;
   text-align: center;
+  font-family: var(--secFont);
 }
 footer .container{
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-direction: column;
   gap: 20px;
 }
@@ -856,6 +871,14 @@ footer ul{
 }
 footer ul li a{
   color: var(--secColor);
+  transition: var(--mainTransition);
+}
+.dark footer,
+.dark footer ul li a{
+  color: var(--mainColor);
+}
+footer ul li a:hover{
+  color: var(--textColor);
 }
 @media(max-width:767px){
   footer .container{
@@ -865,14 +888,7 @@ footer ul li a{
     flex-direction: column;
   }
 }
-footer .copyright{
-  color: #fff;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-footer .date{
-  color: #fff;
+footer .container div{
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -903,12 +919,17 @@ button#close{
   padding: 5px 20px;
   background-color: var(--glassDark);
 }
-.dark button#open, .darkMode button#close{
+.dark button#open, .dark button#close{
   background: var(--glassDark);
   color: var(--secColor);
 }
 button#open:hover, button#close:hover{
+  background-color: var(--secColor);
   color: var(--mainColor);
+}
+.dark #open:hover, .dark button#close:hover{
+  background-color: var(--glassColor);
+  color: var(--secColor);
 }
 .question{
   display: flex;
@@ -934,13 +955,17 @@ button#open:hover, button#close:hover{
   color: var(--secColor);
   border-radius: var(--roundShape);
   backdrop-filter: blur(25px);
-  padding: 30px 50px;
-  width:500px;
+  padding: 30px 40px;
+  width:400px;
   max-width: 100%;
   text-align: center;
+  border:  1px solid rgb(255 255 255 / 20%);
 }
 .dark .modal{
   background: var(--glassDark);
+}
+.modal h1{
+  font-family: var(--secFont);
 }
 .modal p{
   font-size: 14px;
@@ -979,7 +1004,7 @@ button#open:hover, button#close:hover{
 /* Scroll to Top */
 .scrollTop{
   position: fixed;
-  bottom: 10px;
+  bottom: 100px;
   right: 10px;
   opacity: 0;
   font-size: 17px;
@@ -1015,5 +1040,13 @@ button#open:hover, button#close:hover{
 }
 100% {
     transform: rotate(0deg);
+  }
+}
+@keyframes down {
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
