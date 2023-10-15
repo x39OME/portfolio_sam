@@ -568,6 +568,10 @@ section .navigation div:hover{
   width: 25px;
   height: 20px;
 }
+.skills .my-skills .boxes .skills-box .skill div p{
+  font-size: 13px;
+  font-family: var(--secFont);
+}
 .skills .my-skills .boxes .skills-box .skill span{
   font-size: 11px;
   display: flex;
