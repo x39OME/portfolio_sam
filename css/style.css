@@ -656,7 +656,8 @@ section .navigation div:hover{
   padding: 5px;
 }
 .dark .projects .my-project .box .content p{
-  border-top-color:rgba(255, 255, 255, .1)
+  border-top-color:rgba(255, 255, 255, .1);
+  color: var(--textDark);
 }
 .projects .my-project .box .content ul {
   display: flex;
@@ -684,7 +685,7 @@ section .navigation div:hover{
 .dark .projects .my-project .box .info{
   border-color: rgba(255, 255, 255, .1);
 }
-.projects .my-project .box .info a:first-of-type{
+.projects .my-project .box .info a.live-demo{
   color: var(--mainColor);
   font-family:var(--secFont);
   font-size: 14px;
@@ -695,22 +696,22 @@ section .navigation div:hover{
   gap:5px;
   transition:.3s;
 }
-.dark .projects .my-project .box .info a:first-of-type{
+.dark .projects .my-project .box .info a.live-demo{
   color: var(--secColor);
 }
-.projects .my-project .box .info a:first-of-type svg{
+.projects .my-project .box .info a.live-demo svg{
   animation: rotate 1.5s linear infinite;
 }
-.projects .my-project .box .info a:last-of-type svg {
+.projects .my-project .box .info a.github svg {
   font-size: 1.7em;
   border-radius: var(--roundShape);
   color: var(--mainColor);
   transition: .3s;
 }
-.dark .projects .my-project .box .info a:last-of-type svg{
+.dark .projects .my-project .box .info a.github svg{
   color: var(--secColor);
 }
-.projects .my-project .box .info a:hover:last-of-type svg {
+.projects .my-project .box .info a:hover a.github svg {
   background: rgba(0, 0, 0, .1);
   backdrop-filter: blur(15px);
   filter: blur(1px);
@@ -858,6 +859,7 @@ section .navigation div:hover{
 /* Start Footer */
 footer{
   color: var(--secColor);
+  background-color: var(--mainColor) !important;
   padding: 20px 0;
   text-align: center;
   font-family: var(--secFont);
@@ -879,6 +881,7 @@ footer ul li a{
 }
 .dark footer,
 .dark footer ul li a{
+  background-color: var(--secColor) !important;
   color: var(--mainColor);
 }
 footer ul li a:hover{
