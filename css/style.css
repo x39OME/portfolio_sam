@@ -978,6 +978,16 @@ button#open:hover, button#close:hover{
   font-size: 14px;
   opacity: .7;
 }
+.modal p a{
+  color: var(--secColor);
+  font-weight: 800;
+  font-size: 16px;
+  transition: var(--mainTransition);
+}
+.modal p a:hover{
+
+  text-decoration: line-through;
+}
 /* Button Popup */
 /* Dark Mode */
 .toggle{
