@@ -414,7 +414,7 @@ section .navigation div:hover{
   overflow: hidden;
 }
 .about .container{
-  transform: translateY(1000px);
+  transform: translateY(-600px);
   transition: 3s;
   position: relative;
 }
@@ -520,7 +520,7 @@ section .navigation div:hover{
   overflow: hidden;
 }
 .skills .container{
-  transform: translateY(1000px);
+  transform: translateX(1200px);
   transition: 3s;
 }
 .dark .skills{
@@ -622,7 +622,6 @@ section .navigation div:hover{
 }
 .projects .container{
   opacity: 0;
-  transform: scale(0);
   transition: 3s;
 }
 .dark .projects{
@@ -744,6 +743,8 @@ section .navigation div:hover{
 .contact{
   padding-top: var(--mainPadding);
   padding-bottom: var(--mainPadding);
+  opacity: 0;
+  transition: 3s;
 }
 .dark .contact{
   background-color: var(--mainColor);
