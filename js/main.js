@@ -37,11 +37,13 @@ let scrollToTop = document.querySelector(".scrollTop");
 let about = document.querySelector(".about");
 let skills = document.querySelector(".skills");
 let projects = document.querySelector(".projects");
+let contact = document.querySelector(".contact");
 
 
 let transform = document.querySelectorAll(".transform");
 let transform2 = document.querySelectorAll(".transform2");
 let opacity = document.querySelectorAll(".opacity");
+let opacity2 = document.querySelectorAll(".opacity2");
 
 
 // onscroll
@@ -49,23 +51,28 @@ window.onscroll = function () {
   this.scrollY >= 1000 ? scrollToTop.classList.add("show") : scrollToTop.classList.remove("show");
 
   // About
-  if (window.scrollY >= about.offsetTop + -50) {
+  if (window.scrollY >= about.offsetTop + -200) {
     transform.forEach((about) => {
       about.style.transform = "translateY(0px)"
       about.style.opacity = "1"
     });
   }
   // skills
-  if (window.scrollY >= skills.offsetTop + -50) {
+  if (window.scrollY >= skills.offsetTop + -200) {
     transform2.forEach((skills) => {
-      skills.style.transform = "translateY(0px)"
+      skills.style.transform = "translateX(0px)"
     });
   }
   // projects
-  if (window.scrollY >= projects.offsetTop + -50) {
+  if (window.scrollY >= projects.offsetTop + -80) {
     opacity.forEach((projects) => {
       projects.style.opacity = "1"
-      projects.style.transform = "scale(1)"
+    });
+  }
+    // Contact Me
+  if (window.scrollY >= contact.offsetTop + -80) {
+    opacity2.forEach((contact) => {
+      contact.style.opacity = "1"
     });
   }
 };
