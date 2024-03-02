@@ -414,7 +414,7 @@ section .navigation div:hover{
   overflow: hidden;
 }
 .about .container{
-  transform: translateY(-1000px);
+  transform: translateY(-1050px);
   transition: 3s;
   position: relative;
 }
