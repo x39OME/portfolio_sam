@@ -657,8 +657,8 @@ section .navigation div:hover{
   height:180px;
 }
 .projects .my-project .box .content {
-  padding: 10px;
-  height: 240px;
+  padding: 8px;
+  height: 210px;
 }
 .projects .my-project .box .content h3 {
   font-family: var(--secFont);
