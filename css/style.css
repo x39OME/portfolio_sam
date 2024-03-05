@@ -698,6 +698,7 @@ section .navigation div:hover{
   display: flex;
   justify-content:space-between;
   align-items: center;
+  height:50px;
 }
 .dark .projects .my-project .box .info{
   border-color: rgba(255, 255, 255, .3);
