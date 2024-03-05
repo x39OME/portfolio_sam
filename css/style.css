@@ -639,7 +639,7 @@ section .navigation div:hover{
   border-radius: var(--roundShape);
   overflow: hidden;
   transition: transform var(--mainTransition), box-shadow var(--mainTransition);
-  padding: 5px;
+  padding: 5px 5px 0;
   border: 5px double #e6e6e7;
 }
 .dark .projects .my-project .box{
