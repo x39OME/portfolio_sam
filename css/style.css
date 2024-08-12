@@ -363,8 +363,8 @@ section .navigation div {
   backdrop-filter: blur(15px);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
   color: var(--secColor);
-  font-size: 1.5em;
-  letter-spacing: 2px;
+  font-size: 1em;
+  letter-spacing: 1px;
   font-weight: 300;
   text-transform: capitalize;
   padding: 4px 10px;
@@ -403,7 +403,8 @@ section .navigation div:hover{
     padding: 0 5px;
   }
   section .navigation div{
-    font-size: 1em;
+    font-size: .8em;
+    width: 300px;
   }
 }
 /* End Section */
@@ -438,26 +439,13 @@ section .navigation div:hover{
 }
 .about .about-me .about_info .about-des{
   text-align: center;
-  font-size: 13px;
+  font-size: 12px;
   font-family: var(--secFont);
   font-weight: 400;
 }
 .about .about-me .about_info .about-des p{
   position: relative;
   margin-top: 20px;
-}
-.about .about-me .about_info .about-des p::before{
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50px;
-  height: 2px;
-  background-color: var(--mainColor);
-}
-.dark .about .about-me .about_info .about-des p::before{
-  background-color: var(--secColor);
 }
 @media(max-width:993px){
   .about .about-me{
@@ -511,6 +499,11 @@ section .navigation div:hover{
 .about .about-me img{
   width: 350px;
   height: auto;
+  filter: blur(2px);
+  transition: var(--mainTransition);
+}
+.about .about-me img:hover{
+  filter: blur(0);
 }
 /* End About Me */
 /* Start Skills */
@@ -667,7 +660,7 @@ section .navigation div:hover{
 }
 .projects .my-project .box .content p {
   margin-top: 8px;
-  line-height: 1.5;
+  line-height: 1.2;
   color: var(--textColor);
   border-top: 5px double #e6e6e7;
   padding: 5px;
@@ -686,8 +679,9 @@ section .navigation div:hover{
 .projects .my-project .box .content ul li{
   background-color: var(--glassColor);
   color: var(--secColor);
-  padding: 3px;
+  padding: 2px;
   border-radius: var(--roundShape);
+  font-size: 15px;
 }
 .dark .projects .my-project .box .content ul li{
   background-color: rgba(255, 255, 255, .2);
@@ -932,14 +926,13 @@ button#open, button#close{
   border: none;
   font-size: 14px;
   cursor: pointer;
-  border: 1px solid var(--mainColor);
 }
 button#open{
   position: fixed;
   z-index: 999;
-  left: 0px;
-  top: 100px;
-  padding: 5px 10px;
+  right:5px;
+  top: 135px;
+  padding: 3px 7px;
 }
 button#close{
   margin-top: 20px;
@@ -1005,7 +998,6 @@ button#open:hover, button#close:hover{
   transition: var(--mainTransition);
 }
 .modal p a:hover{
-
   text-decoration: line-through;
 }
 /* Button Popup */
@@ -1016,12 +1008,12 @@ button#open:hover, button#close:hover{
   align-items: center;
   position: fixed;
   top: 100px;
-  right: 20px;
+  right: 5px;
   transition: var(--mainTransition);
   border: 1px solid var(--mainColor);
   border-radius: var(--roundShape);
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
   z-index: 999;
 }
